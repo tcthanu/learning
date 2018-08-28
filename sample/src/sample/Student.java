@@ -1,9 +1,9 @@
 package sample;
 
 public class Student {
-	int regNo;
-	int age;
-	String name;
+	private int regNo;
+	private int age;
+	private String name;
 	
 	public Student() {
 		System.out.println("Default constructor");
@@ -21,6 +21,12 @@ public class Student {
 	
 	public void printDetails() {
 		System.out.println("Name "+name + "\t Reg No :"+regNo + " \tAge"+ age );
+	}
+	
+	public static void main(String a[]) {
+		Student s=new Student();
+		System.out.println("Name "+s.name + "\t Reg No :"+s.regNo + " \tAge"+ s.age );
+		
 	}
  
 }
