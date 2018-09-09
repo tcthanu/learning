@@ -2,7 +2,7 @@ package fita.learning.core.java;
 
 public class Demo {
 	public static void main(String[] args) {
-		int result = process(5);
+		int result = process(15);
 		System.out.println(result);
 		Account acc=new Account(1000);
 		acc.balanceEnquiry();

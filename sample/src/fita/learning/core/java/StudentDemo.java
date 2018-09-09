@@ -6,10 +6,8 @@ public class StudentDemo {
 
 	public static void main(String[] args) {
 		Student s=new Student();
-		Student s2=new Student(1001,20,"Vinu");
-		s.printDetails();
-		s2.printDetails();
-		
+		Student vinu=new Student(1001,20,"Vinu");
+		System.out.println(vinu);
 	}
 
 }

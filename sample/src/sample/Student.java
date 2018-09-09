@@ -19,6 +19,13 @@ public class Student {
 		
 	}
 	
+	
+	
+	@Override
+	public String toString() {
+		return "Name "+name + "\t Reg No :"+regNo + " \tAge"+ age ;
+	}
+
 	public void printDetails() {
 		System.out.println("Name "+name + "\t Reg No :"+regNo + " \tAge"+ age );
 	}
