@@ -7,8 +7,15 @@ public class GameDemo {
 		System.out.println("Enter your Option");
 		System.out.println("1. Temple Run");
 		System.out.println("2. Fruit Ninja");
-		System.out.println("Other: Temple Run");
+		System.out.println("Other: Anonymous Game");
 		int option = MyInput.in.nextInt();
+		Game anonymousGame = new Game() {
+			@Override
+			public void play() {
+				System.out.println("Default Game from anonymous Game");			
+			}
+			
+		};
 		Game g;
 		switch (option) {
 		case 1:
@@ -18,7 +25,7 @@ public class GameDemo {
 			g = new FruitNinja();
 			break;
 		default:
-			g = new TempleRun();
+			g = anonymousGame;
 		}
 		playGame(g);
 
