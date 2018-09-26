@@ -47,6 +47,9 @@ public class StudentDemo {
 		for (Student s : sList) {
 			System.out.println(s);
 		}
+		
+		double x= (double) 3/5;
+		System.out.println(x);
 
 	}
 }
