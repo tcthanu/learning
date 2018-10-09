@@ -11,7 +11,6 @@ public class FileDemo {
 		File folder = new File(dirName);
 		FilenameFilter filter= new MyFileNameFilter();
 		FilenameFilter filter2= new FilenameFilter() {
-			
 			@Override
 			public boolean accept(File arg0, String arg1) {
 				return arg1.toLowerCase().contains("sample");
