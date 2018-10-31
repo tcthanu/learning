@@ -1,33 +1,47 @@
 package fita.learning.core.java.collection;
 
-public class Employee implements Comparable<Employee> {
-	@Override
-	public String toString() {
-		return "Id : "+id +"\tName : "+name+"\tSal: "+salary;
+public class Employee {
+	   private int id;
+	   private String firstName; 
+	   private String lastName;   
+	   private int salary;  
+
+	   public Employee() {}
+	   public Employee(String fname, String lname, int salary) {
+	      this.firstName = fname;
+	      this.lastName = lname;
+	      this.salary = salary;
+	   }
+	   
+	   public int getId() {
+	      return id;
+	   }
+	   
+	   public void setId( int id ) {
+	      this.id = id;
+	   }
+	   
+	   public String getFirstName() {
+	      return firstName;
+	   }
+	   
+	   public void setFirstName( String first_name ) {
+	      this.firstName = first_name;
+	   }
+	   
+	   public String getLastName() {
+	      return lastName;
+	   }
+	   
+	   public void setLastName( String last_name ) {
+	      this.lastName = last_name;
+	   }
+	   
+	   public int getSalary() {
+	      return salary;
+	   }
+	   
+	   public void setSalary( int salary ) {
+	      this.salary = salary;
+	   }
 	}
-
-	private int id;
-	private String name;
-	private double salary;
-
-	public Employee(int id, String name, double salary) {
-		this.id = id;
-		this.name = name;
-		this.salary = salary;
-
-	}
-
-	@Override
-	public int compareTo(Employee e) {
-		return this.name.compareTo(e.name);
-//		if(this.id == e.id) {
-//			return 0;//return this.name.compareTo(e.name);
-//		}
-//		if(this.id > e.id) {
-//			return 1;
-//		}else {
-//			return -1;
-//		}
-	}
-	
-}
