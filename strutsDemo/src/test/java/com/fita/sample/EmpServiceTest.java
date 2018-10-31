@@ -28,9 +28,4 @@ public class EmpServiceTest {
 		service.updateEmployee(2, 60000);
 	}
 	
-	private void deleteAll() {
-		// TODO Auto-generated method stub
-		List<Employee> list= service.listEmployees();
-		IntStream.range(0, list.size()).mapToObj(service::deleteEmployee);
-	}
 }

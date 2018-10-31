@@ -15,4 +15,13 @@
       <property name = "lastName" column = "last_name" type = "string"/> 
       <property name = "salary" column = "salary" type = "int"/>         
    </class>
+   <class name="com.fita.sample.Department" table="DEPT">
+    <meta attribute = "class-description">
+         This class contains the Department detail. 
+      </meta>
+    <id name = "id" type = "int" column = "id">
+         <generator class="native"/>
+      </id> 
+      <property name = "name" column = "DEPT_NAME" type = "string"/> 
+   </class>
 </hibernate-mapping>

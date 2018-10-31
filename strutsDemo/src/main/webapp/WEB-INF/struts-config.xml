@@ -5,6 +5,7 @@
 	<form-beans>
 		<form-bean name="StudentForm"
 			type="com.fita.sample.StudentRegistrationForm" />
+		<form-bean name="empForm" type="com.fita.sample.EmpForm"/>	
 	</form-beans>
 	<action-mappings>
 		<action path="/student" type="com.fita.sample.StudentAction"
@@ -12,5 +13,10 @@
 			<forward name="success" path="/StudentRegistration.jsp" />
 			<forward name="complete" path="/Complete.jsp" />
 		</action>
+		<action path="/employee" type="com.fita.sample.EmpAction" name="empForm" parameter="event">
+			<forward name="success" path="/employee.jsp" />
+		</action>
 	</action-mappings>
+	
+	
 </struts-config>

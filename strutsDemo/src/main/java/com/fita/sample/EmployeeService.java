@@ -11,7 +11,7 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 public class EmployeeService {
-	 private static SessionFactory factory = new Configuration().configure().buildSessionFactory();; 
+	 private static SessionFactory factory = new Configuration().configure().buildSessionFactory();
 		
 	/* Method to CREATE an employee in the database */
 	   public Integer addEmployee(String fname, String lname, int salary){
